@@ -1,0 +1,15 @@
+<!-- Add these entries inside the <application> tag of your AndroidManifest.xml -->
+
+<!-- FCM Service: handles token refresh and incoming messages -->
+<service
+    android:name="YOUR.PACKAGE.NAME.FCMService"
+    android:exported="false">
+    <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+    </intent-filter>
+</service>
+
+<!-- Godot plugin registration: tells Godot to load FCMPlugin -->
+<meta-data
+    android:name="org.godotengine.plugin.v2.FCMPlugin"
+    android:value="YOUR.PACKAGE.NAME.FCMPlugin" />

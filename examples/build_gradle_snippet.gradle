@@ -1,0 +1,13 @@
+// === build.gradle changes ===
+
+// 1. Add the Google Services plugin to your plugins block:
+plugins {
+    // ... existing plugins ...
+    id 'com.google.gms.google-services'
+}
+
+// 2. Add the Firebase Messaging dependency to your dependencies block:
+dependencies {
+    // ... existing dependencies ...
+    implementation "com.google.firebase:firebase-messaging:24.0.0"
+}
