@@ -1,3 +1,7 @@
+<!-- Add this permission at the top level of your AndroidManifest.xml (inside <manifest>, outside <application>) -->
+<!-- Required for Android 13+ (API 33+) to show push notifications -->
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
 <!-- Add these entries inside the <application> tag of your AndroidManifest.xml -->
 
 <!-- FCM Service: handles token refresh and incoming messages -->
